@@ -2,7 +2,7 @@ module.exports = {
   //-- SITE SETTINGS -----
   author: "@konstantinmuenster",
   siteTitle: "Gatsby Starter Portfolio Minimal",
-  siteShortTitle: "Gatsby", // Used as logo text in header, footer, and splash screen
+  siteShortTitle: "Ken Tanoue", // Used as logo text in header, footer, and splash screen
   siteDescription:
     "A modern one-page portfolio with a clean yet expressive design.",
   siteUrl: "https://gatsby-starter-portfolio-minimal.netlify.app/",
@@ -56,27 +56,26 @@ module.exports = {
   // There are icons available for the following platforms:
   // Medium, GitHub, LinkedIn, XING, Behance, E-Mail
   socialMedia: [
-    {
-      name: "Linkedin",
-      url: "https://www.linkedin.com/in/konstantin-muenster/",
-    },
+    // {
+    //   name: "Linkedin",
+    //   url: "",
+    // },
     {
       name: "Medium",
       url: "https://konstantinmuenster.medium.com/",
     },
     {
       name: "Github",
-      url:
-        "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal",
+      url: "https://github.com/kent28808",
     },
     {
       name: "Behance",
       url: "https://www.behance.net/konstanmnster",
     },
-    // {
-    //   name: "Mail",
-    //   url: "mailto:mail@konstantin.digital",
-    // },
+    {
+      name: "Mail",
+      url: "kent28808@gmail.com",
+    },
   ],
 
   //-- NAVIGATION SETTINGS -----
@@ -87,7 +86,7 @@ module.exports = {
         url: "/#about",
       },
       {
-        name: "Features",
+        name: "Projects",
         url: "/#projects",
       },
       {
@@ -99,7 +98,7 @@ module.exports = {
       useFileName: true,
       name: "Resume",
       fileName: "goldenpuppy.pdf", // the file has to be placed inside the static folder at the root level
-      url: "", // if useFileName=false, you can set an anchor link here and use the button for navigational purposes
+      url: "https://docs.google.com/document/d/1LlOWe9pnQapP6rHp6sw2lhkO0rfG1mJxGrjxDP0UT-s/edit", // if useFileName=false, you can set an anchor link here and use the button for navigational purposes
     },
   },
   footerLinks: [
