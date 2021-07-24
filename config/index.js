@@ -56,25 +56,21 @@ module.exports = {
   // There are icons available for the following platforms:
   // Medium, GitHub, LinkedIn, XING, Behance, E-Mail
   socialMedia: [
-    // {
-    //   name: "Linkedin",
-    //   url: "",
-    // },
-    {
-      name: "Medium",
-      url: "https://konstantinmuenster.medium.com/",
-    },
     {
       name: "Github",
       url: "https://github.com/kent28808",
     },
     {
-      name: "Behance",
-      url: "https://www.behance.net/konstanmnster",
+      name: "Linkedin",
+      url: "www.linkedin.com/in/kent28808",
     },
     {
-      name: "Mail",
-      url: "kent28808@gmail.com",
+      name: "Medium",
+      url: "https://kent28.medium.com/protecting-user-passwords-using-bcrypt-ff69d20660fd",
+    },
+    {
+      name: "Contact Me",
+      url: "https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=kent28808@gmail.com",
     },
   ],
 
