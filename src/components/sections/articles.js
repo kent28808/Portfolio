@@ -121,27 +121,27 @@ const Articles = () => {
   const articlesControls = useAnimation()
 
   // Load and display articles after the splashScreen sequence is done
-  useEffect(() => {
-    const loadArticles = async () => {
-      if (isIntroDone) {
-        await articlesControls.start({
-          opacity: 1,
-          y: 0,
-          transition: { delay: 1 },
-        })
-        fetch(mediumRssFeed, { headers: { Accept: "application/json" } })
-          // fetch(rssFeed, { headers: { Accept: "application/json" } })
-          .then(res => res.json())
-          // Feed also contains comments, therefore we filter for articles only
-          .then(data => data.items.filter(item => item.categories.length > 0))
-          // .then(data => data.items.filter(item => item.title.length > 0))
-          .then(newArticles => newArticles.slice(0, MAX_ARTICLES))
-          .then(articles => setArticles(articles))
-          .catch(error => console.log(error))
-      }
-    }
-    loadArticles()
-  }, [isIntroDone, articlesControls, MAX_ARTICLES])
+  // useEffect(() => {
+  //   const loadArticles = async () => {
+  //     if (isIntroDone) {
+  //       await articlesControls.start({
+  //         opacity: 1,
+  //         y: 0,
+  //         transition: { delay: 1 },
+  //       })
+  //       fetch(mediumRssFeed, { headers: { Accept: "application/json" } })
+  //         // fetch(rssFeed, { headers: { Accept: "application/json" } })
+  //         .then(res => res.json())
+  //         // Feed also contains comments, therefore we filter for articles only
+  //         .then(data => data.items.filter(item => item.categories.length > 0))
+  //         // .then(data => data.items.filter(item => item.title.length > 0))
+  //         .then(newArticles => newArticles.slice(0, MAX_ARTICLES))
+  //         .then(articles => setArticles(articles))
+  //         .catch(error => console.log(error))
+  //     }
+  //   }
+  //   loadArticles()
+  // }, [isIntroDone, articlesControls, MAX_ARTICLES])
 
   return (
     <StyledSection
