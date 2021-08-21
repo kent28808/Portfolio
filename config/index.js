@@ -46,8 +46,7 @@ module.exports = {
   //-- ARTICLES SECTION SETTINGS -----
   // You can create your own Medium feed with this rss to json converter: https://rss2json.com/
   // To access your Medium RSS feed, just replace this url with your username: https://medium.com/feed/@{yourname}
-  mediumRssFeed:
-    "",
+  mediumRssFeed: "",
   // rssFeed: "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.theguardian.com%2Finternational%2Frss",
 
   shownArticles: 0,
@@ -66,11 +65,13 @@ module.exports = {
     },
     {
       name: "Medium",
-      url: "https://kent28.medium.com/protecting-user-passwords-using-bcrypt-ff69d20660fd",
+      url:
+        "https://kent28.medium.com/protecting-user-passwords-using-bcrypt-ff69d20660fd",
     },
     {
       name: "Contact Me",
-      url: "https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=kent28808@gmail.com",
+      url:
+        "https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=kent28808@gmail.com",
     },
   ],
 
@@ -91,10 +92,11 @@ module.exports = {
       },
     ],
     button: {
-      useFileName: true,
+      useFileName: false,
       name: "Resume",
       fileName: "goldenpuppy.pdf", // the file has to be placed inside the static folder at the root level
-      url: "https://docs.google.com/document/d/1LlOWe9pnQapP6rHp6sw2lhkO0rfG1mJxGrjxDP0UT-s/edit", // if useFileName=false, you can set an anchor link here and use the button for navigational purposes
+      url:
+        "https://docs.google.com/document/d/1LlOWe9pnQapP6rHp6sw2lhkO0rfG1mJxGrjxDP0UT-s/edit?usp=sharing", // if useFileName=false, you can set an anchor link here and use the button for navigational purposes
     },
   },
   footerLinks: [
