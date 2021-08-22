@@ -61,7 +61,7 @@ module.exports = {
     },
     {
       name: "Linkedin",
-      url: "www.linkedin.com/in/kent28808",
+      url: "https://www.linkedin.com/in/kent28808/",
     },
     {
       name: "Medium",
