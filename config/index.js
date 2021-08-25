@@ -92,9 +92,9 @@ module.exports = {
       },
     ],
     button: {
-      useFileName: false,
+      useFileName: true,
       name: "Resume",
-      fileName: "goldenpuppy.pdf", // the file has to be placed inside the static folder at the root level
+      fileName: "resume.pdf", // the file has to be placed inside the static folder at the root level
       url:
         "https://docs.google.com/document/d/1LlOWe9pnQapP6rHp6sw2lhkO0rfG1mJxGrjxDP0UT-s/edit?usp=sharing", // if useFileName=false, you can set an anchor link here and use the button for navigational purposes
     },
