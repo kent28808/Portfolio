@@ -3,9 +3,8 @@ module.exports = {
   author: "@kent28808",
   siteTitle: "Ken T. Portfolio",
   siteShortTitle: "Ken T.", // Used as logo text in header, footer, and splash screen
-  siteDescription:
-    "A modern one-page portfolio with a clean yet expressive design.",
-  siteUrl: "https://gatsby-starter-portfolio-minimal.netlify.app/",
+  siteDescription: "Ken T. Portfolio",
+  siteUrl: "https://kent28.netlify.app/",
   siteLanguage: "en_US",
   siteIcon: "content/favicon.png", // Relative to gatsby-config file
   seoTitleSuffix: "Ken T.", // SEO title syntax will be e.g. "Imprint - {seoTitleSuffix}"
