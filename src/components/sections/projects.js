@@ -197,6 +197,23 @@ const StyledProject = styled(motion.div)`
       height: 18.75rem;
     }
   }
+
+  .projectphotos {
+    display: block;
+    width: 100%;
+    max-width: 25rem;
+    height: 15rem;
+    border-radius: ${({ theme }) => theme.borderRadius};
+    box-shadow: 0 0 2.5rem rgba(0, 0, 0, 0.16);
+    transition: all 0.3s ease-out;
+    &:hover {
+      transform: translate3d(0px, -0.125rem, 0px);
+      box-shadow: 0 0 2.5rem rgba(0, 0, 0, 0.32);
+    }
+    @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
+      height: 18.75rem;
+    }
+  }
 `
 
 const Projects = ({ content }) => {
@@ -338,10 +355,18 @@ const Projects = ({ content }) => {
                   <VisibilitySensor
                     onChange={() => setVisibleProject(frontmatter.position)}
                   >
-                    <Img
-                      className="screenshot"
-                      fluid={frontmatter.screenshot.childImageSharp.fluid}
-                    />
+                    <a
+                      className="projectphotos"
+                      href={frontmatter.external}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="External Link"
+                    >
+                      <Img
+                        className="screenshot"
+                        fluid={frontmatter.screenshot.childImageSharp.fluid}
+                      />
+                    </a>
                   </VisibilitySensor>
                 </StyledProject>
               </VisibilitySensor>
